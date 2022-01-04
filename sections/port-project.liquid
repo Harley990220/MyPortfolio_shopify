@@ -1,0 +1,69 @@
+<div class="project_class" id="project">
+    <div class="container">
+        <div class="grid-collection2">
+            <div class="pro_width" data-aos="fade-right" data-aos-duration="1000">
+                <div class="pro_title">
+                    <p class="job_title">{{ section.settings.job_txt }}</p>
+                    <p class="job_subtitle">{{ section.settings.intro_title }}</p>
+                    <div class="button_grid">
+                        <div class="sp_btn_div">
+                            <a class="see_pro_btn" href="#case">See my projects &nbsp; &nbsp;{% render 'icon' with 'arrow-down' %}
+                            </a>
+                        </div>
+                        <div class="ram_div">
+                            <a class="about_me">Read about me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pro_width" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="per_padding">
+                    <img class="shape_class" src="{{ section.settings.back_img | img_url:'2048x' }}">
+                    <div class="img_size">
+                        <img class="person_img_size" src="{{ section.settings.person_img | img_url:'2048x' }}">
+                        <img class="ellipse_class" src="{{ section.settings.greendot_img | img_url:'800x' }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name":"Introduce",
+"settings":[
+{
+"type":"image_picker",
+"id":"person_img",
+"label":"Choose Person Image"
+},
+{
+"type":"image_picker",
+"id":"back_img",
+"label":"Choose Person Image"
+},
+{
+"type":"image_picker",
+"id":"greendot_img",
+"label":"Choose Person Image"
+},
+{
+"type":"text",
+"id":"job_txt",
+"label":"Edit your job",
+"default":"Multidisciplinary developer"
+},
+{
+"type":"textarea",
+"id":"intro_title",
+"label":"Write about you"
+}
+],
+"presets":[
+{
+"name":"Introduce"
+}
+]
+}
+{% endschema %}

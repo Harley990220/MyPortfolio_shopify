@@ -1,0 +1,265 @@
+<div class="case-section" id="case">
+    <div class="container">
+        {% assign set = section.settings %}
+        <div class="case-header" data-aos="fade-up" data-aos-duration="1000">
+            <a class="sec_title">Case studies</a>
+            <p class="ab_title">{{ set.case_title }}</p>
+        </div>
+        <div class="pro_lg" data-aos="fade-up" data-aos-duration="1000">
+            <div class="pro_lg_img">
+                <img src="{{ set.case1_img | img_url: '2048x' }}" class="person_img_size">
+            </div>
+            <div class="project_info">
+                <p class="pro_name">{{ set.case1_name }}<a class="case_pad"
+                                                           href="{{ section.settings.case1_link }}">{% render
+                                'icon' with 'arrow-out' %}</a></p>
+                <p class="skill_txt">{{ set.case1_info }}</p>
+            </div>
+        </div>
+        <div class="pro-grid" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col6">
+                <div class="pro_sm">
+                    <div class="pro_sm_img">
+                        <img src="{{ set.case2_img | img_url: '2048x' }}" class="person_img_size">
+                    </div>
+                    <div class="project_info">
+                        <p class="pro_name">{{ set.case2_name }}<a class="case_pad"
+                                                                   href="{{ section.settings.case2_link }}">{% render
+                                        'icon' with 'arrow-out' %}</a></p>
+                        <p class="skill_txt">{{ set.case2_info }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col6">
+                <div class="pro_md">
+                    <div class="pro_md_img">
+                        <img src="{{ set.case3_img | img_url: '2048x' }}" class="person_img_size">
+                    </div>
+                    <div class="project_info">
+                        <p class="pro_name">{{ set.case3_name }}<a class="case_pad"
+                                                                   href="{{ section.settings.case3_link }}">{% render
+                                        'icon' with 'arrow-out' %}</a></p>
+                        <p class="skill_txt">{{ set.case3_info }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex_right" data-aos="fade-up" data-aos-duration="1000">
+            <div class="pro_lg">
+                <div class="pro_lg_img">
+                    <img src="{{ set.case4_img | img_url: '2048x' }}" class="person_img_size">
+                </div>
+                <div class="project_info">
+                    <p class="pro_name">{{ set.case4_name }}<a class="case_pad"
+                                                               href="{{ section.settings.case4_link }}">{% render
+                                    'icon' with 'arrow-out' %}</a></p>
+                    <p class="skill_txt">{{ set.case4_info }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="pro-grid" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col6">
+                <div class="pro_md">
+                    <div>
+                        <img src="{{ set.case5_img | img_url: '2048x' }}" class="person_img_size">
+                    </div>
+                    <div class="project_info">
+                        <p class="pro_name">{{ set.case5_name }}<a class="case_pad"
+                                                                   href="{{ section.settings.case5_link }}">{% render
+                                        'icon' with 'arrow-out' %}</a></p>
+                        <p class="skill_txt">{{ set.case5_info }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col6">
+                <div class="pro_sm float-right">
+                    <div class="pro_md_img">
+                        <img src="{{ set.case6_img | img_url: '2048x' }}" class="person_img_size">
+                    </div>
+                    <div class="project_info">
+                        <p class="pro_name">{{ set.case6_name }}<a class="case_pad"
+                                                                   href="{{ section.settings.case6_link }}">{% render
+                                        'icon' with 'arrow-out' %}</a></p>
+                        <p class="skill_txt">{{ set.case6_info }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape4_div" style="margin-bottom: -81px">
+        <img class="shape4_class" src="{{ section.settings.shape4_img | img_url:'800x' }}">
+    </div>
+</div>
+<div class="shape4_div" style="margin-top: -81px">
+    <img class="shape4_class" src="{{ section.settings.shape4_img | img_url:'800x' }}">
+</div>
+{% schema %}
+{
+"name":"Case Studies",
+"settings":[
+{
+"type":"textarea",
+"id":"case_title",
+"label":"Write your case studies"
+},
+{
+"type":"header",
+"content":"First Project"
+},
+{
+"type":"image_picker",
+"id":"case1_img",
+"label":"Choose Image"
+},
+{
+"type":"text",
+"id":"case1_name",
+"label":"Write Project Name"
+},
+{
+"type":"textarea",
+"id":"case1_info",
+"label":"Write Project Info"
+},
+{
+"type":"url",
+"id":"case1_link",
+"label":"Project Url"
+},
+{
+"type":"header",
+"content":"Second Project"
+},
+{
+"type":"image_picker",
+"id":"case2_img",
+"label":"Choose Image"
+},
+{
+"type":"text",
+"id":"case2_name",
+"label":"Write Project Name"
+},
+{
+"type":"textarea",
+"id":"case2_info",
+"label":"Write Project Info"
+},
+{
+"type":"url",
+"id":"case2_link",
+"label":"Project Url"
+},
+{
+"type":"header",
+"content":"Third Project"
+},
+{
+"type":"image_picker",
+"id":"case3_img",
+"label":"Choose Image"
+},
+{
+"type":"text",
+"id":"case3_name",
+"label":"Write Project Name"
+},
+{
+"type":"textarea",
+"id":"case3_info",
+"label":"Write Project Info"
+},
+{
+"type":"url",
+"id":"case3_link",
+"label":"Project Url"
+},
+{
+"type":"header",
+"content":"Fourth Project"
+},
+{
+"type":"image_picker",
+"id":"case4_img",
+"label":"Choose Image"
+},
+{
+"type":"text",
+"id":"case4_name",
+"label":"Write Project Name"
+},
+{
+"type":"textarea",
+"id":"case4_info",
+"label":"Write Project Info"
+},
+{
+"type":"url",
+"id":"case4_link",
+"label":"Project Url"
+},
+{
+"type":"header",
+"content":"Fifth Project"
+},
+{
+"type":"image_picker",
+"id":"case5_img",
+"label":"Choose Image"
+},
+{
+"type":"text",
+"id":"case5_name",
+"label":"Write Project Name"
+},
+{
+"type":"textarea",
+"id":"case5_info",
+"label":"Write Project Info"
+},
+{
+"type":"url",
+"id":"case5_link",
+"label":"Project Url"
+},
+{
+"type":"header",
+"content":"Sixth Project"
+},
+{
+"type":"image_picker",
+"id":"case6_img",
+"label":"Choose Image"
+},
+{
+"type":"text",
+"id":"case6_name",
+"label":"Write Project Name"
+},
+{
+"type":"textarea",
+"id":"case6_info",
+"label":"Write Project Info"
+},
+{
+"type":"url",
+"id":"case6_link",
+"label":"Project Url"
+},
+{
+"type":"header",
+"content":"Background Image"
+},
+{
+"type":"image_picker",
+"id":"shape4_img",
+"label":"Choose Image"
+}
+],
+"presets":[
+{
+"name":"Case Studies"
+}
+]
+}
+{% endschema %}

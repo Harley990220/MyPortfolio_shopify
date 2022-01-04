@@ -1,0 +1,102 @@
+<div class="contact_class" id="testimonial">
+    {% assign set = section.settings %}
+    <div class="pos_center" data-aos="fade-up" data-aos-duration="1000">
+        <a class="sec_title">Testimonials</a>
+        <p class="test_title">{{ set.test_title }}</p>
+    </div>
+    <div class="test_container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="test_flex">
+            <div class="testimonial">
+                <div class="test_slide">
+                    {% for block in section.blocks %}
+                    <div class="test_content">
+                        <div class="test_segment">
+                            <a class="test_quote">{% render 'icon' with 'quote' %}</a>
+                            <p class="test_ele_title">{{ block.settings.test_subtitle }}</p>
+                            <div class="test_txt">
+                                <p class="skill_txt">{{ block.settings.test_content }}</p>
+                            </div>
+                            <div class="review_star">
+                                {% for i in (1..block.settings.test_star) %}
+                                {% render 'icon' with 'test-star' %}
+                                {% endfor %}
+                            </div>
+                            <div class="rev_person">
+                                <div class="rp_img_size">
+                                    <img src="{{ block.settings.test_img | img_url }}" class="rp_img_full">
+                                </div>
+                                <div class="per_info">
+                                    <p class="per_name">{{ block.settings.test_person_name }}</p>
+                                    <p class="per_country">{{ block.settings.test_person_company }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name":"Testimonial",
+"max_blocks":10,
+"settings":[
+{
+"type":"text",
+"id":"test_title",
+"label":"Write Testimonial Header"
+}
+],
+"presets":[
+{
+"name":"Testimonial"
+}
+],
+"blocks":[
+{
+"name":"Testimonial",
+"type":"testimonial",
+"settings":[
+{
+"type":"text",
+"id":"test_subtitle",
+"label":"Write Testimonial Title"
+},
+{
+"type":"textarea",
+"id":"test_content",
+"label":"Write Testimonial Content"
+},
+{
+"type":"range",
+"id":"test_star",
+"max":5,
+"min":0,
+"step":1,
+"default":5,
+"label":"Choose Number of star"
+},
+{
+"type":"image_picker",
+"id":"test_img",
+"label":"Select Person"
+},
+{
+"type":"text",
+"id":"test_person_name",
+"label":"Write Name"
+},
+{
+"type":"text",
+"id":"test_person_company",
+"label":"Write Company"
+}
+]
+}
+]
+
+}
+{% endschema %}

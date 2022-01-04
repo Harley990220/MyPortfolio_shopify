@@ -1,0 +1,21 @@
+<div class="footer">
+    <div class="container">
+        <div class="footer_grid">
+            <a class="logo" href="/">Mykola<span class="green"> Turovskyi</span></a>
+            <div style="display: flex;flex-direction: row;">
+                {% if settings.social_linkedin_link != blank %}
+                    <a class="btn-pad"
+                       href="{{ settings.social_linkedin_link | escape }}">{% render 'icon' with 'linkedin' %}</a>
+                {% endif %}
+                {% if settings.social_github_link != blank %}
+                    <a class="btn-pad"
+                       href="{{ settings.social_github_link | escape }}">{% render 'icon' with 'github' %}</a>
+                {% endif %}
+                {% if settings.social_linkedin_link != blank %}
+                    <a class="btn-pad"
+                       href="{{ settings.social_twitter_link | escape }}">{% render 'icon' with 'twitter' %}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

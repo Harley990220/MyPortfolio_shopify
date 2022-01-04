@@ -1,0 +1,29 @@
+<!-- /templates/product.liquid -->
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% section 'product-template' %}
+{% section 'product-recommendations' %}
+
+<div id="backToCollection"></div>
+
+<script>
+  if(sessionStorage.backToCollection) {
+    theme.backToCollection = {};
+    theme.backToCollection.collection = JSON.parse(sessionStorage.backToCollection);
+    var productCollections = {{ product.collections | json }};
+    var showCollection = false;
+    if (productCollections) {
+      $.each(productCollections, function(index, collection) {
+        if (collection.title === theme.backToCollection.collection.title) {
+          showCollection = true;
+        }
+      });
+    }
+    if(showCollection) {
+      var backToCollectionHTML = '<hr class="hr--clear"><div class="text-center"><a href="' + theme.backToCollection.collection.link + '" class="back-to-collection">&larr; {{ 'products.general.collection_return' | t }} ' + theme.backToCollection.collection.title + '</a></div>';
+      $("#backToCollection").append(backToCollectionHTML);
+    }
+  }
+</script>

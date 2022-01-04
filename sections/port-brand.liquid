@@ -1,0 +1,34 @@
+<div class="brand-section">
+    <div class="container">
+        <div class="brand-grid">
+            {% for block in section.blocks %}
+            <img src="{{ block.settings.brand_image | img_url : '800x' }}">
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name":"Brand",
+"max_blocks":20,
+"presets":[
+{
+"name":"Brand Image"
+}
+],
+"blocks":[
+{
+"name":"Brand Image",
+"type":"brandimage",
+"settings":[
+{
+"type":"image_picker",
+"id":"brand_image",
+"label":"Choose your Image"
+}
+]
+}
+]
+}
+{% endschema %}

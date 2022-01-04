@@ -1,0 +1,99 @@
+<div class="fixed-nav">
+  <div class="fix_navigation" id="Top_bar">
+    <div class="nav_container container">
+      <div>
+        <a class="logo" href="{{ settings.link_list[0].url }}">{{ section.settings.first_name }} <span class="green">{{ section.settings.last_name }}</a>
+      </div>
+      <div class="link_social_flex">
+        <div class="pad_right">
+          {% assign set= section.settings %}
+          {% for link in linklists[set.header_menu].links %}
+          <a class="link_element" href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+        <div class="central-social">
+          {% comment %}<span class="icon_size fab fa-linkedin">{% endcomment %}
+          {% if settings.social_linkedin_link != blank %}
+            <a class="btn-pad svg-wrapper" href="{{ settings.social_linkedin_link | escape }}">{% render 'icon' with 'linkedin' %}</a>
+          {% endif %}
+          {% if settings.social_github_link != blank %}
+            <a class="btn-pad" href="{{ settings.social_github_link | escape }}">{% render 'icon' with 'github' %}</a>
+          {% endif %}
+          {% if settings.social_linkedin_link != blank %}
+            <a class="btn-pad" href="{{ settings.social_twitter_link | escape }}">{% render 'icon' with 'twitter' %}</a>
+          {% endif %}
+        </div>
+      </div>
+      <a class="menu_btn" id="toggle">{% render 'icon' with 'sidebar' %}</a>
+    </div>
+  </div>
+</div>
+<div class="sidebar sidebar--isHidden" id="sss">
+  <div class="sidelogo">
+    <a class="logo" href="{{ settings.link_list[0].url }}">Mykola <span class="green">Turovskyi</a>
+  </div>
+    <ul class="nav">
+    {% for link in linklists[section.settings.header_menu].links %}
+      <li>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="sidebar-social">
+    {% if settings.social_linkedin_link != blank %}
+      <a class="btn-pad"
+         href="{{ settings.social_linkedin_link | escape }}">{% render 'icon' with 'linkedin' %}</a>
+    {% endif %}
+    {% if settings.social_github_link != blank %}
+      <a class="btn-pad"
+         href="{{ settings.social_github_link | escape }}">{% render 'icon' with 'github' %}</a>
+    {% endif %}
+    {% if settings.social_linkedin_link != blank %}
+      <a class="btn-pad"
+         href="{{ settings.social_twitter_link | escape }}">{% render 'icon' with 'twitter' %}</a>
+    {% endif %}
+  </div>
+
+</div>
+{% schema %}
+{
+"name":"Header",
+"settings":[{
+"type":"link_list",
+"id":"header_menu",
+"label":"Choose menu"
+},
+{
+"type":"text",
+"id":"first_name",
+"label":"First Name",
+"default":"Mykola"
+},
+{
+"type":"text",
+"id":"last_name",
+"label":"Last Name",
+"default":"Turovskiy"
+}
+]
+}
+{% endschema %}
+
+<script type="text/javascript">
+
+  $('#toggle').click(function(e){
+      e.stopPropagation();
+      $('#sss').toggleClass('sidebar--isHidden');
+  });
+
+  $('.sidebar').click(function(e){
+      e.stopPropagation();
+  });
+
+  $('body,html').click(function(e){
+      if($('.sidebar').classList==null){
+      $('#sss').addClass('sidebar--isHidden');
+      }
+  });
+
+</script>

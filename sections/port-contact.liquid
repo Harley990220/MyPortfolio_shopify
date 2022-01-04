@@ -1,0 +1,24 @@
+<div class="contact_class" id="contact">
+    <div class="contact_grid" data-aos="fade-up" data-aos-duration="1000">
+        <a class="sec_title">Contact</a>
+        <p class="contact_title">{{ section.settings.contact_title }}</p>
+        <a class="see_pro_btn">Start a project &nbsp; &nbsp;{% render 'icon' with 'arrow-right' %}</a>
+    </div>
+</div>
+{% schema %}
+{
+"name":"Contact",
+"settings":[
+{
+"type":"text",
+"id":"contact_title",
+"label":"Write Contact Title"
+}
+],
+"presets":[
+{
+"name":"Contact"
+}
+]
+}
+{% endschema %}

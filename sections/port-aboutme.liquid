@@ -1,0 +1,172 @@
+<div class="aboutme-section" id="about_me">
+    <div class="container">
+        <div class="ab_relative" data-aos="fade-up" data-aos-duration="1000">
+            {% assign set = section.settings %}
+            <div class="skill_info">
+                <a class="sec_title">About me</a>
+                <p class="ab_title">{{ set.ab_title }}</p>
+            </div>
+            <div class="ab1_grid" data-aos="fade-up" data-aos-duration="1000">
+                {% for block in section.blocks %}
+                    <div class="skill_class">
+                        <div class="skill_content">
+                            <div style="padding: 1vw 0">
+                                <p class="skill_icon">
+                                    {% case block.settings.svg %}
+                                        {% when 'gitfok' %}
+                                            {% render 'icon' with 'gitfok' %}
+                                        {% when 'code' %}
+                                            {% render 'icon' with 'code' %}
+                                        {% when 'cpu' %}
+                                            {% render 'icon' with 'cpu' %}
+                                    {% endcase %}
+                                </p>
+                            </div>
+                            <p class="skill_subtitle">{{ block.settings.skill_name }}</p>
+                            <p class="skill_txt">{{ block.settings.skill_content }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <img class="shpae2_class" src="{{ set.shape2_img | img_url: '800x' }}" alt="shape2">
+            </div>
+        </div>
+        <div class="ab_relative" data-aos="fade-up" data-aos-duration="1000">
+            <div class="experience_grid">
+                <div class="exp_divide1">
+                    <div class="experience_content" id="div1">
+                        <div style="padding: 0.6vw 0">
+                            <a class="sec_title">About me</a>
+                        </div>
+                        <p class="experienc_title">{{ set.exp_title }}</p>
+                        <p class="skill_txt">{{ set.exp_info }}</p>
+                    </div>
+                    <div class="hidden_image">
+                        <img src="{{ set.exp_img | img_url: '2048x' }}" class="exp_img_size">
+                    </div>
+                    <div class="experience_content" id="div2">
+                        <div class="shopify_title_grid">
+                            <img class="sho_icon_class" src="{{ set.shopify_icon | img_url: '24x' }}">
+                            <p class="shopify_title">{{ set.shopify_title }}</p>
+                        </div>
+                        <p class="skill_txt">{{ set.shopify_content }}</p>
+                    </div>
+                </div>
+                <div class="exp_divide2 pos_rel" id="img_div">
+                    <div class="exp_image">
+                        <img src="{{ set.exp_img | img_url: '800x' }}" class="exp_img_size">
+                    </div>
+                    <img class="shape3_class" src="{{ set.shape3_img | img_url: '800x' }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name":"About me",
+"max_blocks":10,
+"settings":[
+{
+"type":"textarea",
+"id":"ab_title",
+"label":"Write your information"
+},
+{
+"type":"image_picker",
+"id":"shape2_img",
+"label":"Choose back image"
+},
+{
+"type":"image_picker",
+"id":"shape3_img",
+"label":"Choose back image"
+},
+{
+"type":"header",
+"content":"Experience"
+},
+{
+"type":"text",
+"id":"exp_title",
+"label":"Write Experience Title"
+},
+{
+"type":"textarea",
+"id":"exp_info",
+"label":"Write your Experience"
+},
+{
+"type":"header",
+"content":"Shopify"
+},
+{
+"type":"image_picker",
+"id":"shopify_icon",
+"label":"Shopify Header Icon"
+},
+{
+"type":"text",
+"id":"shopify_title",
+"label":"Write Title"
+},
+{
+"type":"textarea",
+"id":"shopify_content",
+"label":"Write Shopify experience"
+},
+{
+"type":"header",
+"content":"Experience Image"
+},
+{
+"type":"image_picker",
+"id":"exp_img",
+"label":"Choose Experience Image"
+}
+],
+"presets":[
+{
+"name":"About me"
+}
+],
+"blocks":[
+{
+"name":"Skill",
+"type":"skill",
+"settings":[
+{
+"type": "select",
+"id": "svg",
+"label": "Select SVG code",
+"options": [
+{
+"value": "gitfok",
+"label": "Gitfok"
+},
+{
+"value": "code",
+"label": "Code"
+},
+{
+"value": "cpu",
+"label": "CPU"
+}
+],
+"default": "gitfok"
+},
+{
+"type":"text",
+"id":"skill_name",
+"label":"Write Skill Name"
+},
+{
+"type":"textarea",
+"id":"skill_content",
+"label":"Write Skill"
+}
+]
+}
+]
+}
+{% endschema %}
