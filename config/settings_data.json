@@ -233,6 +233,37 @@
       },
       "port-aboutme": {
         "type": "port-aboutme",
+        "blocks": {
+          "8d4957cc-18ea-4d80-a4af-896d2061ac6a": {
+            "type": "skill",
+            "settings": {
+              "svg": "gitfok",
+              "skill_name": "HTML, CSS, JS, JQUERY, LIQUID",
+              "skill_content": "I've worked with many successful Shopify agencies and I love working with existing teams to solve problems and provide technical solutions."
+            }
+          },
+          "434a4503-665f-4d91-8cc8-8df9ed47714e": {
+            "type": "skill",
+            "settings": {
+              "svg": "gitfok",
+              "skill_name": "",
+              "skill_content": ""
+            }
+          },
+          "8a0b2a21-9309-4987-a7ab-5a3fcf8ed62e": {
+            "type": "skill",
+            "settings": {
+              "svg": "gitfok",
+              "skill_name": "",
+              "skill_content": ""
+            }
+          }
+        },
+        "block_order": [
+          "8d4957cc-18ea-4d80-a4af-896d2061ac6a",
+          "434a4503-665f-4d91-8cc8-8df9ed47714e",
+          "8a0b2a21-9309-4987-a7ab-5a3fcf8ed62e"
+        ],
         "settings": {
           "ab_title": "I've worked with many successful Shopify agencies and I love working with existing teams to solve problems and provide technical solutions. I also offer training to developers who aren't so familiar with Shopify and do consultancy work for when you need specific in-depth knowledge from my many years of experience.",
           "shape2_img": "shopify:\/\/shop_images\/shape2.png",
