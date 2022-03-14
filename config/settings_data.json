@@ -234,11 +234,15 @@
       "port-aboutme": {
         "type": "port-aboutme",
         "settings": {
-          "ab_title": "",
-          "exp_title": "",
-          "exp_info": "",
-          "shopify_title": "",
-          "shopify_content": ""
+          "ab_title": "I've worked with many successful Shopify agencies and I love working with existing teams to solve problems and provide technical solutions. I also offer training to developers who aren't so familiar with Shopify and do consultancy work for when you need specific in-depth knowledge from my many years of experience.",
+          "shape2_img": "shopify:\/\/shop_images\/shape2.png",
+          "shape3_img": "shopify:\/\/shop_images\/shape3.png",
+          "exp_title": "Experience",
+          "exp_info": "I've worked with many successful Shopify agencies and I love working with existing teams to solve problems and provide technical solutions. I also offer training to developers who aren't so familiar with Shopify and do consultancy work for when you need specific in-depth knowledge from my many years of experience.",
+          "shopify_icon": "shopify:\/\/shop_images\/shopify_icon_d02ba4fa-141d-4f1f-90dc-5b7ef577fe9c.png",
+          "shopify_title": "Shopify",
+          "shopify_content": "I hopped on the Shopify bandwagon early on, back in 2014 and I've been 100% focused on the platform ever since. This gives me a unique perspective because I've seen the platform grow in real-time and my knowledge has expanded exponentially with each project I've been involved with.",
+          "exp_img": "shopify:\/\/shop_images\/experience.png"
         }
       },
       "port-testimonial": {
