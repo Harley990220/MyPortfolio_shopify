@@ -304,11 +304,12 @@
           "85dd6911-43c2-48d9-8e51-7f4904527c3c": {
             "type": "testimonial",
             "settings": {
-              "test_subtitle": "",
-              "test_content": "",
+              "test_subtitle": "Cool!",
+              "test_content": "Tom is really great to work with! He is super speedy and really thinks outside of the box when it comes to developing within Shopify.",
               "test_star": 5,
-              "test_person_name": "",
-              "test_person_company": ""
+              "test_img": "shopify:\/\/shop_images\/1.webp",
+              "test_person_name": "Nico Jackle",
+              "test_person_company": "CTO at Creative971"
             }
           }
         },
