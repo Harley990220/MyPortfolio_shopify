@@ -162,6 +162,14 @@
           "show_share_buttons": true,
           "social_message": "Spread the word"
         }
+      },
+      "port-project": {
+        "type": "port-project",
+        "settings": {
+          "person_img": "shopify:\/\/shop_images\/work.jpg",
+          "job_txt": "Multidisciplinary developer",
+          "intro_title": ""
+        }
       }
     },
     "content_for_index": [
