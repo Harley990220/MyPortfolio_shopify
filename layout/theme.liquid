@@ -94,7 +94,7 @@
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}
 
-  {{ 'modernizr.min.js' | asset_url | script_tag }}
+  {% comment %}{{ 'modernizr.min.js' | asset_url | script_tag }}{% endcomment %}
 
   {% comment %}
     If you store has customer accounts disabled, you can remove the following JS file
