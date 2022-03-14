@@ -172,6 +172,110 @@
           "job_txt": "Senior Shopify Full stack Developer",
           "intro_title": "This is Kikuchi Yusuke, a multidisciplinary developer specialising in crafting solutions for the Shopify platform."
         }
+      },
+      "port-brand": {
+        "type": "port-brand",
+        "blocks": {
+          "7c14ef3b-ceb7-4d01-93cd-3d733c4e9495": {
+            "type": "brandimage",
+            "settings": {
+              "brand_image": "shopify:\/\/shop_images\/brand1.png"
+            }
+          },
+          "4321f969-cbf2-464d-bf57-101fdf2ecf73": {
+            "type": "brandimage",
+            "settings": {
+              "brand_image": "shopify:\/\/shop_images\/brand2.png"
+            }
+          },
+          "c4b4edf5-e0f1-4279-a2a6-d76f78ce2220": {
+            "type": "brandimage",
+            "settings": {
+              "brand_image": "shopify:\/\/shop_images\/brand3.png"
+            }
+          },
+          "06b33302-b895-4a16-a077-927563aeb022": {
+            "type": "brandimage",
+            "settings": {
+              "brand_image": "shopify:\/\/shop_images\/brand4.png"
+            }
+          },
+          "ae2e5d76-c860-40c5-b91a-e124adf66034": {
+            "type": "brandimage",
+            "settings": {
+              "brand_image": "shopify:\/\/shop_images\/brand5.png"
+            }
+          },
+          "564af9c7-65fd-498f-b481-44b0a4e343fa": {
+            "type": "brandimage",
+            "settings": {
+              "brand_image": "shopify:\/\/shop_images\/brand6.png"
+            }
+          },
+          "317078e1-bacd-468b-a58d-a030ac66188b": {
+            "type": "brandimage",
+            "settings": {
+              "brand_image": "shopify:\/\/shop_images\/brand7.png"
+            }
+          }
+        },
+        "block_order": [
+          "7c14ef3b-ceb7-4d01-93cd-3d733c4e9495",
+          "4321f969-cbf2-464d-bf57-101fdf2ecf73",
+          "c4b4edf5-e0f1-4279-a2a6-d76f78ce2220",
+          "06b33302-b895-4a16-a077-927563aeb022",
+          "ae2e5d76-c860-40c5-b91a-e124adf66034",
+          "564af9c7-65fd-498f-b481-44b0a4e343fa",
+          "317078e1-bacd-468b-a58d-a030ac66188b"
+        ],
+        "settings": {
+        }
+      },
+      "port-aboutme": {
+        "type": "port-aboutme",
+        "settings": {
+          "ab_title": "",
+          "exp_title": "",
+          "exp_info": "",
+          "shopify_title": "",
+          "shopify_content": ""
+        }
+      },
+      "port-testimonial": {
+        "type": "port-testimonial",
+        "settings": {
+          "test_title": ""
+        }
+      },
+      "port-casestudy": {
+        "type": "port-casestudy",
+        "settings": {
+          "case_title": "",
+          "case1_name": "",
+          "case1_info": "",
+          "case1_link": "",
+          "case2_name": "",
+          "case2_info": "",
+          "case2_link": "",
+          "case3_name": "",
+          "case3_info": "",
+          "case3_link": "",
+          "case4_name": "",
+          "case4_info": "",
+          "case4_link": "",
+          "case5_name": "",
+          "case5_info": "",
+          "case5_link": "",
+          "case6_name": "",
+          "case6_info": "",
+          "case6_link": ""
+        }
+      },
+      "port-contact": {
+        "type": "port-contact",
+        "settings": {
+          "contact_title": ""
+        }
       }
     },
     "content_for_index": [
