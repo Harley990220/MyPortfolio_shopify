@@ -293,11 +293,12 @@
           "0178ff59-a5e6-4d5d-87d8-ec0a64d88739": {
             "type": "testimonial",
             "settings": {
-              "test_subtitle": "",
-              "test_content": "",
+              "test_subtitle": "Yusuke best!",
+              "test_content": "Tom is really great to work with! He is super speedy and really thinks outside of the box when it comes to developing within Shopify.",
               "test_star": 5,
-              "test_person_name": "",
-              "test_person_company": ""
+              "test_img": "shopify:\/\/shop_images\/download_small_a20186a3-e87d-47df-93f2-777dc173b35e.webp",
+              "test_person_name": "Kyle Hunt",
+              "test_person_company": "Founder at FamilyGiftsCo"
             }
           },
           "85dd6911-43c2-48d9-8e51-7f4904527c3c": {
