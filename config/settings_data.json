@@ -7,9 +7,9 @@
       "header": {
         "type": "header",
         "settings": {
-          "header_menu": "",
-          "first_name": "Mykola",
-          "last_name": "Turovskiy"
+          "header_menu": "main-menu",
+          "first_name": "Yusuke",
+          "last_name": "Kikuchi"
         }
       },
       "slideshow": {
