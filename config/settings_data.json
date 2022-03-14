@@ -167,6 +167,7 @@
         "type": "port-project",
         "settings": {
           "person_img": "shopify:\/\/shop_images\/work.jpg",
+          "back_img": "shopify:\/\/shop_images\/shape1.png",
           "job_txt": "Multidisciplinary developer",
           "intro_title": ""
         }
